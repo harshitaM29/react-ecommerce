@@ -1,5 +1,5 @@
 import ProductItem from "./ProductItem";
-
+import { Card,Row,Col, ListGroup } from "react-bootstrap";
 const dummy_list = [
     {
 
@@ -49,9 +49,10 @@ const ProductList = props => {
     );
 
     return (
-        <ul>
-            {productList}
-        </ul>
+       <ListGroup horizontal='lg' className="my-2">
+        {productList }
+       </ListGroup>
+        
     )
     
 
