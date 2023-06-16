@@ -13,7 +13,7 @@ const Header = props => {
             <Nav.Link href="#pricing">About</Nav.Link>
 
           </Nav>
-        <HeaderCart />
+        <HeaderCart onClick={props.onOpen}/>
         </Container>
         </Navbar>
        <div className={classes.generics}>

@@ -1,0 +1,9 @@
+.total {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem 0;
+    
+  }

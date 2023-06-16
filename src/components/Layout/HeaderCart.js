@@ -3,6 +3,7 @@ import { Button,Badge } from "react-bootstrap";
 
 
 const HeaderCart = props => {
+    console.log(props)
     return (
         <Fragment>
     <Button variant="outline-primary"  onClick={props.onClick}>
