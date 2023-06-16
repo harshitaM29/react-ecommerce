@@ -1,0 +1,16 @@
+.heading {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* .para{
+    float: left;   
+    margin: 30px 12px 3px 4px;  
+} */
+
+.para{
+    display: block;
+    text-align: justify;
+      font-size: 25px;
+}
