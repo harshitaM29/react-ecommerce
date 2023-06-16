@@ -8,7 +8,7 @@ const Header = props => {
       <Navbar bg="black" variant="dark">
         <Container>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/">Store</Nav.Link>
             <Nav.Link href="/about">About</Nav.Link>
 
