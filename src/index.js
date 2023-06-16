@@ -5,7 +5,9 @@ import './index.css';
 import App from './App';
 
 import "../node_modules/react-bootstrap/dist/react-bootstrap";
-import "../node_modules/bootstrap/dist/css/bootstrap.css"
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import { SocialIcon } from 'react-social-icons';
+import "react-icons";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);

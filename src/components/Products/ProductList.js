@@ -1,5 +1,6 @@
+import { Fragment } from "react-bootstrap/dist/react-bootstrap";
 import ProductItem from "./ProductItem";
-import { Card,Row,Col, ListGroup } from "react-bootstrap";
+import { Card,Row,Col, ListGroup, Button } from "react-bootstrap";
 const dummy_list = [
     {
 
@@ -39,7 +40,8 @@ const dummy_list = [
         
         imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%204.png',
         
-        }
+        },
+
 ]
 const ProductList = props => {
     const productList = dummy_list.map(item => <ProductItem
@@ -49,9 +51,12 @@ const ProductList = props => {
     );
 
     return (
-       <ListGroup horizontal='lg' className="my-2">
+        
+       <ul>
         {productList }
-       </ListGroup>
+       </ul>
+       
+     
         
     )
     

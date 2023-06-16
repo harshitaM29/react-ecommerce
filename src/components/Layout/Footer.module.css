@@ -1,0 +1,21 @@
+.footer {
+color:white;
+font-weight: bold;
+   height: 5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color:teal;
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  display: flex;
+}
+
+.social {
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    /* height: 120px; */
+
+}
