@@ -1,6 +1,7 @@
 import HeaderCart from "./HeaderCart";
 import { Fragment } from "react";
 import { Nav, Navbar, Container,} from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import classes from './Header.module.css'
 const Header = props => {
     return (
@@ -8,9 +9,18 @@ const Header = props => {
       <Navbar bg="black" variant="dark">
         <Container>
           <Nav className="me-auto">
-            <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/">Store</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+          <Nav.Link><NavLink to="/home" style={({ 
+                            textDecoration: 'none', color: 'white'})}>
+                            Home
+                        </NavLink></Nav.Link>
+          <Nav.Link><NavLink to="/" style={ ({ 
+                       textDecoration: 'none', color: 'white'})}>
+                            Store
+                        </NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/about" style={ ({ 
+                       textDecoration: 'none', color: 'white'})}>
+                            About
+                        </NavLink></Nav.Link>
 
           </Nav>
         <HeaderCart onClick={props.onOpen}/>

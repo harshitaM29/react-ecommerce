@@ -1,5 +1,6 @@
 import Footer from "../Layout/Footer";
 import { Nav, Navbar, Container, Button, Card, Stack,} from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import classes from './Home.module.css';
 import { Fragment } from "react";
 const Home = () => {
@@ -8,9 +9,18 @@ const Home = () => {
         <Navbar bg="black" variant="dark">
           <Container>
             <Nav className="me-auto">
-              <Nav.Link href="/home">Home</Nav.Link>
-              <Nav.Link href="/">Store</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link><NavLink to="/home" style={({ 
+                            textDecoration: 'none', color: 'white'})}>
+                            Home
+                        </NavLink></Nav.Link>
+          <Nav.Link><NavLink to="/" style={ ({ 
+                       textDecoration: 'none', color: 'white'})}>
+                            Store
+                        </NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/about" style={ ({ 
+                       textDecoration: 'none', color: 'white'})}>
+                            About
+                        </NavLink></Nav.Link>
   
             </Nav>
           </Container>
