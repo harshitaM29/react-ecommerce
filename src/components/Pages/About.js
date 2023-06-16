@@ -10,8 +10,8 @@ const About = () => {
        
                
             <div>
-        <Image src="https://prasadyash2411.github.io/ecom-website/img/Band%20Members.png" width="60%" roundedCircle style={{
-            float:'left', margin:'5px'
+        <Image src="https://prasadyash2411.github.io/ecom-website/img/Band%20Members.png" width="15%" height="20%" roundedCircle style={{
+            float:'left', padding:'3px', margin:'2%'
         }}/>
         </div>
         <p className={classes.para}>Lorem ipsum carrots enhanced rebates. 
