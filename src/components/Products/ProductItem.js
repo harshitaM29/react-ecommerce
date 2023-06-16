@@ -1,7 +1,11 @@
 import { Card,Button,Container, Row, Col, CardGroup } from "react-bootstrap";
 import { Fragment } from "react-bootstrap/dist/react-bootstrap";
+import CartContext from "../../store/cart-context";
+import { useContext } from "react";
+import AddButton from "./AddButton";
 
 const ProductItem = props => {
+ 
     return (
        
         <Container>
@@ -15,7 +19,7 @@ const ProductItem = props => {
         <Card.Img variant="top" src={props.image} />
         <Card.Footer>
            <Card.Text>{props.price}</Card.Text> 
-            <Button variant="primary">Add To Cart</Button>
+           <AddButton items={props} />
         </Card.Footer>
         
         </Card.Body>

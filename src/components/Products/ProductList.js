@@ -3,17 +3,19 @@ import ProductItem from "./ProductItem";
 import { Card,Row,Col, ListGroup, Button } from "react-bootstrap";
 const dummy_list = [
     {
-
+        id: 'p1',
         title: 'Colors',
         
         price: 100,
         
         imageUrl: 'https://prasadyash2411.github.io/ecom-website/img/Album%201.png',
+       
         
         },
         
         {
         
+        id:'p2',
         title: 'Black and white Colors',
         
         price: 50,
@@ -23,7 +25,7 @@ const dummy_list = [
         },
         
         {
-        
+        id:'p3',
         title: 'Yellow and Black Colors',
         
         price: 70,
@@ -33,6 +35,7 @@ const dummy_list = [
         },
         
         {
+            id:'p4',
         
         title: 'Blue Color',
         
@@ -44,7 +47,10 @@ const dummy_list = [
 
 ]
 const ProductList = props => {
+   
     const productList = dummy_list.map(item => <ProductItem
+        key={item.id}
+        id={item.id}
         title={item.title}
         price={item.price}
         image={item.imageUrl} />

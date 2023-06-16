@@ -3,6 +3,7 @@ import Header from './components/Layout/Header';
 import ProductList from './components/Products/ProductList';
 import Footer from './components/Layout/Footer';
 import Cart from './components/Cart/Cart';
+import CartContextProvider from './store/CartContextProvider';
 
 import './App.css';
 
@@ -18,7 +19,7 @@ function App() {
     setISOpen(false);
   }
   return (
-   <Fragment>
+   <CartContextProvider>
     {isOpen && <Cart onOpen={openCart} onClose={closeCart} /> }
     <Header onOpen={openCart}/>
    
@@ -27,7 +28,7 @@ function App() {
     <footer>
       <Footer />
     </footer>
-   </Fragment>
+   </CartContextProvider>
   );
 }
 
