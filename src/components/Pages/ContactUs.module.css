@@ -1,0 +1,87 @@
+.generics {
+
+    margin-top: 0.1rem;
+    height:10rem;
+    width:100%;
+    background: rgb(35, 31, 31);
+    text-align: center;
+    color: white;
+    font-weight: bold ;
+    font-size: 5rem;
+}
+.contact {
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+
+}
+
+.contact label {
+font-weight: bold;
+margin-bottom: 0.5rem;
+display: block;
+width: 10rem;
+}
+
+.contact input {
+font: inherit;
+padding: 0.5rem;
+border-radius: 6px;
+border: 1px solid #ccc;
+width: 20rem;
+max-width: 100%;
+border-radius: 2rem;
+}
+.openingText {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+
+}
+
+.openingText label {
+font-weight: bold;
+margin-bottom: 0.5rem;
+display: block;
+width: 10rem;
+}
+
+.openingText textarea {
+font: inherit;
+padding: 0.5rem;
+border-radius: 1rem;
+border: 1px solid #ccc;
+width: 20rem;
+max-width: 100%;
+
+}
+
+.date {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+margin-bottom: 1rem;
+text-align: left;
+}
+
+.date label {
+font-weight: bold;
+margin-bottom: 0.5rem;
+display: block;
+width: 10rem;
+}
+.date input {
+font: inherit;
+padding: 0.5rem;
+border-radius: 6px;
+border: 1px solid #ccc;
+width: 20rem;
+max-width: 100%;
+border-radius: 2rem;
+}
