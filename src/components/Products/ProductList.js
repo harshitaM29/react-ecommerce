@@ -1,6 +1,7 @@
 import { Fragment } from "react-bootstrap/dist/react-bootstrap";
 import ProductItem from "./ProductItem";
 import { Card,Row,Col, ListGroup, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 const dummy_list = [
     {
         id: 'p1',
@@ -57,7 +58,7 @@ const ProductList = props => {
     );
 
     return (
-        
+    
        <ul>
         {productList }
        </ul>

@@ -3,11 +3,13 @@ import { Fragment } from "react-bootstrap/dist/react-bootstrap";
 import CartContext from "../../store/cart-context";
 import { useContext } from "react";
 import AddButton from "./AddButton";
+import { Link } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const ProductItem = props => {
  
     return (
-       
+    
         <Container>
         <Row>
         <Col style={{justifyContent:'center',marginLeft:'30rem', width:"50%"}}>
@@ -15,7 +17,8 @@ const ProductItem = props => {
         style={{ width: '18rem',marginTop:'1rem'}}>
         
         <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <Link to={`/${props.id}`}>
+          <Card.Title>{props.title}</Card.Title></Link>
         <Card.Img variant="top" src={props.image} />
         <Card.Footer>
            <Card.Text>{props.price}</Card.Text> 
@@ -28,7 +31,7 @@ const ProductItem = props => {
     </Row>
        
   </Container>
-  
+
 
     )
 };

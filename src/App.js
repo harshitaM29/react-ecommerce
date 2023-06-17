@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './components/Pages/About';
 import Home from './components/Pages/Home';
 import ContactUs from './components/Pages/ContactUs';
-
+import Product from './components/Pages/Product';
 import './App.css';
 
 const addContactUsInfo = async(data) => {
@@ -21,7 +21,8 @@ const router = createBrowserRouter([
     {path:'/', element:<Store />},
     {path:'/about', element: <About />},
     {path:'/home', element:<Home />},
-    {path:'/contactus', element:<ContactUs onAddContactUs={addContactUsInfo}/>}
+    {path:'/contactus', element:<ContactUs onAddContactUs={addContactUsInfo}/>},
+    {path:'/:Id',element:<Product />}
     
 
   
