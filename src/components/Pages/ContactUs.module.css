@@ -9,7 +9,18 @@
     font-weight: bold ;
     font-size: 5rem;
 }
-.contact {
+.form {
+    border: 1px solid black;
+    margin-top: 1rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    display: "flex";
+        align-items: "center";
+        height: "100%";
+        justify-content: center;
+        padding: 1rem
+}
+.name {
    
     display: flex;
     flex-wrap: wrap;
@@ -19,23 +30,23 @@
 
 }
 
-.contact label {
+.name label {
 font-weight: bold;
 margin-bottom: 0.5rem;
 display: block;
 width: 10rem;
 }
 
-.contact input {
+.name input {
 font: inherit;
 padding: 0.5rem;
-border-radius: 6px;
+border-radius:  1rem;
 border: 1px solid #ccc;
 width: 20rem;
 max-width: 100%;
 border-radius: 2rem;
 }
-.openingText {
+.emailID {
 
     display: flex;
     flex-wrap: wrap;
@@ -45,24 +56,25 @@ border-radius: 2rem;
 
 }
 
-.openingText label {
-font-weight: bold;
-margin-bottom: 0.5rem;
-display: block;
-width: 10rem;
+.emailID label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    width: 10rem;
 }
 
-.openingText textarea {
-font: inherit;
-padding: 0.5rem;
-border-radius: 1rem;
-border: 1px solid #ccc;
-width: 20rem;
-max-width: 100%;
+.emailID input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+    border-radius: 2rem;
 
 }
 
-.date {
+.number {
 display: flex;
 flex-wrap: wrap;
 gap: 1rem;
@@ -70,18 +82,23 @@ margin-bottom: 1rem;
 text-align: left;
 }
 
-.date label {
+.number label {
 font-weight: bold;
 margin-bottom: 0.5rem;
 display: block;
 width: 10rem;
 }
-.date input {
+.number input {
 font: inherit;
 padding: 0.5rem;
-border-radius: 6px;
+border-radius: 1rem;
 border: 1px solid #ccc;
 width: 20rem;
 max-width: 100%;
 border-radius: 2rem;
+}
+.form button {
+    border-radius: 1rem;
+    padding: 2%;
+    background: teal;
 }

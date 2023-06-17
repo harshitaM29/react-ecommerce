@@ -21,6 +21,10 @@ const Home = () => {
                        textDecoration: 'none', color: 'white'})}>
                             About
                         </NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/contactus" style={ ({ 
+                       textDecoration: 'none', color: 'white'})}>
+                            Contact Us
+                        </NavLink></Nav.Link>
   
             </Nav>
           </Container>
