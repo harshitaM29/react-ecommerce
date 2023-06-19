@@ -37,32 +37,7 @@ const ContactUs = (props) => {
     }
     return (
         <Fragment>
-        <Navbar bg="black" variant="dark">
-        <Container>
-          <Nav className="me-auto">
-          <Nav.Link><NavLink to="/home" style={({ 
-                          textDecoration: 'none', color: 'white'})}>
-                          Home
-                      </NavLink></Nav.Link>
-        <Nav.Link><NavLink to="/" style={ ({ 
-                     textDecoration: 'none', color: 'white'})}>
-                          Store
-                      </NavLink></Nav.Link>
-          <Nav.Link><NavLink to="/about" style={ ({ 
-                     textDecoration: 'none', color: 'white'})}>
-                          About
-                      </NavLink></Nav.Link>
-        <Nav.Link><NavLink to="/contactus" style={ ({ 
-                       textDecoration: 'none', color: 'white'})}>
-                            Contact Us
-                        </NavLink></Nav.Link>
-
-          </Nav>
-        </Container>
-        </Navbar>
-        <div className={classes.generics}>
-          <p>The Generics</p>
-        </div>
+       
         <div className={classes.form}>
         <form onSubmit={contactUsHandler}>
 

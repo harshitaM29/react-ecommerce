@@ -48,7 +48,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/home' element={<Home />} />
         <Route path ='/:Id'element={<Product />} />
-        <Route path='/contactus' element={<ContactUs />} />
+        <Route path='/contactus' element={<ContactUs onAddContactUs={addContactUsInfo}/>} />
         {!authCtx.isLoggedIn && <Route path='/auth' element={<AuthForm />} /> }
       </Routes>
      

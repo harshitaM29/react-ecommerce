@@ -1,29 +1,29 @@
 import { Fragment } from "react";
-import { ButtonGroup, Button, Card } from "react-bootstrap";
-import classes from './ColorProduct.module.css'
-const ColorProduct = () => {
+import { Tab,Tabs } from "react-bootstrap";
+import classes from './ColorProduct.module.css';
+const ColorProduct = props => {
+    console.log(props)
+   
     return (
         <Fragment>
-            <h1 style={{textAlign:'center'}}>Color Product</h1>
-       <Card >
-        <div class={classes.container}>
-            
- <img src="https://prasadyash2411.github.io/ecom-website/img/Album%201.png" width="2%" alt="Snow" />
- <img src="https://prasadyash2411.github.io/ecom-website/img/Album%201.png" width="2%" alt="Snow" />
-    
-</div>
+    <Tabs justify className="mb-3">
+      <Tab eventKey="home" title="Home">
+        Tab 1 content
+      </Tab>
+      <Tab eventKey="profile" title="Profile and Status longer">
+        Tab 2 Content
+      </Tab>
+      <Tab eventKey="contact" title="Contact">
+        Tab 3 content tabs plugin
+      </Tab>
+     
 
-<div className={classes.info}> 
-<h1>Reviews</h1>
-<ul style={{listStyle:'none'}}>
-    <li>
-       nice
-    </li>
-    <li>very bad</li>
-</ul>
-</div>
-</Card>
-      </Fragment>
+
+
+
+     
+    </Tabs>
+    </Fragment>
     )
 }
 
