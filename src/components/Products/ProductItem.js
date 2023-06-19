@@ -4,7 +4,8 @@ import CartContext from "../../store/cart-context";
 import { useContext } from "react";
 import AddButton from "./AddButton";
 import { Link } from "react-router-dom";
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Route } from "react-router-dom";
+import Product from "../Pages/Product";
 
 const ProductItem = props => {
  
@@ -17,6 +18,7 @@ const ProductItem = props => {
         style={{ width: '18rem',marginTop:'1rem'}}>
         
         <Card.Body>
+    
         <Link to={`/${props.id}`}>
           <Card.Title>{props.title}</Card.Title></Link>
         <Card.Img variant="top" src={props.image} />

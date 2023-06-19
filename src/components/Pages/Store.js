@@ -3,7 +3,8 @@ import Header from  '../Layout/Header'
 import ProductList from '../Products/ProductList'
 import Footer from '../Layout/Footer'
 import Cart from '../Cart/Cart'
-import CartContextProvider from '../../store/CartContextProvider'
+import CartContextProvider from '../../store/CartContextProvider';
+
 
 const Store = props => {
     const [isOpen, setISOpen] = useState(false);

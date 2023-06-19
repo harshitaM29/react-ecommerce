@@ -6,6 +6,7 @@ import Home from './components/Pages/Home';
 import ContactUs from './components/Pages/ContactUs';
 import Product from './components/Pages/Product';
 import './App.css';
+import AuthForm from './components/Pages/AuthForm';
 
 const addContactUsInfo = async(data) => {
  const response = await fetch('https://contact-us-af24a-default-rtdb.firebaseio.com/contactus.json', {
@@ -22,7 +23,8 @@ const router = createBrowserRouter([
     {path:'/about', element: <About />},
     {path:'/home', element:<Home />},
     {path:'/contactus', element:<ContactUs onAddContactUs={addContactUsInfo}/>},
-    {path:'/:Id',element:<Product />}
+    {path:'/:Id',element:<Product />},
+    {path:'/auth', element:<AuthForm />}
     
 
   

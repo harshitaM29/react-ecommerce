@@ -1,5 +1,6 @@
-import { useParams } from "react-router-dom";
+import { Routes, useParams } from "react-router-dom";
 import ColorProduct from './ProductDetails/ColorProduct';
+import { Route } from "react-router-dom";
 const Product = props => {
     console.log(props)
     const params = useParams();
@@ -11,6 +12,7 @@ const Product = props => {
     }
     return (
         <div>
+           
         {product && <ColorProduct />}
         </div>
       

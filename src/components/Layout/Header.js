@@ -21,10 +21,15 @@ const Header = props => {
                        textDecoration: 'none', color: 'white'})}>
                             About
                         </NavLink></Nav.Link>
+          <Nav.Link><NavLink to="/auth" style={ ({ 
+                       textDecoration: 'none', color: 'white'})}>
+                            Login
+                        </NavLink></Nav.Link>
            <Nav.Link><NavLink to="/contactus" style={ ({ 
                        textDecoration: 'none', color: 'white'})}>
                             Contact Us
                         </NavLink></Nav.Link>
+            
 
           </Nav>
         <HeaderCart onClick={props.onOpen}/>
