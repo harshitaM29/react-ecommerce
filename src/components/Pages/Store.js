@@ -7,27 +7,13 @@ import CartContextProvider from '../../store/CartContextProvider';
 
 
 const Store = props => {
-    const [isOpen, setISOpen] = useState(false);
-
-    const openCart = () => {
-      setISOpen(true);
-    }
-  
-    const closeCart = () => {
-      setISOpen(false);
-    }
+   
     return (
-        <CartContextProvider>
-    
-        {isOpen && <Cart onOpen={openCart} onClose={closeCart} /> }
-        <Header onOpen={openCart}/> 
+        
        
         <ProductList />
         
-         <footer>
-          <Footer />
-        </footer>
-       </CartContextProvider>
+    
     )
 
 };

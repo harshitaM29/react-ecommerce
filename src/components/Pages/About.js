@@ -1,11 +1,12 @@
 import { Container, Image, Row, Col } from "react-bootstrap";
 import MainLayout from "../Layout/MainLayout";
 import classes from './About.module.css';
+import { Fragment } from "react";
 
 
 const About = () => {
     return (
-        <MainLayout>
+       <Fragment>
         <h2 className={classes.heading}>About</h2>
        
                
@@ -25,9 +26,9 @@ const About = () => {
                this refused to the pleasures of deleniti? Those are! Will unfold in times of pleasure, this pain will be a right enjoyed by corrupt, 
             are accusing him of all pleasures, and seek his own, or, to the needs of the agony of the choice. We hate the fellow.</p>
             
-           
+            </Fragment>
          
-        </MainLayout>
+       
     );
 }
 
