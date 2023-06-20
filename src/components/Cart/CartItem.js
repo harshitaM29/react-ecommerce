@@ -3,7 +3,8 @@ import classes from './CartItem.module.css'
 
 
 const CartItem = (props) => {
-    console.log("cartitem",props)
+  
+ 
     const price = `$${Number(props.price).toFixed(2)}`;
 
 
@@ -21,6 +22,7 @@ const CartItem = (props) => {
           
         </div>
       </li>
+      // <h1>Cart</h1>
     );
 };
 

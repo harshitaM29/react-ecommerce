@@ -7,7 +7,7 @@ import AuthContext from "../../store/auth-context";
 const AddButton = props =>{
   const authCtx = useContext(AuthContext);
     const cartCtx = useContext(CartContext);
-    const email = authCtx.emailId.split("@")[0]
+     const email = authCtx.isLoggedIn ? authCtx.emailId.split("@")[0] : '';
     const addProductItem = (e) => {
         e.preventDefault();
         let q = 0;
@@ -16,13 +16,20 @@ const AddButton = props =>{
 
         // })
     
-            cartCtx.addToCart({...props.items}, email)  
+            cartCtx.addToCart({...props.items, quantity:1}, email)  
+            window.location.reload(true);
+            
+          
         
         
         
     }
+  
+    
+   
+
     return (
-        <Button variant="primary" onClick={addProductItem}>Add To Cart</Button>
+        <Button variant="primary" onClick={addProductItem}>Add To Cart</Button> 
     )
 
 };
